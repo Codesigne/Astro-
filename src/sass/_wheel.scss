@@ -1,0 +1,147 @@
+.wheel {
+  &--1 {
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    img {
+      height: 200px;
+      width: 200px;
+      right: 0;
+      bottom: 0;
+      -webkit-animation: rotation 32s infinite linear;
+      animation-direction: reverse;
+    }
+  }
+
+  &--2 {
+    height: 290px;
+    width: 155px;
+    bottom: -195px;
+    right: 0;
+    bottom: 0;
+
+    img {
+      height: 400px;
+      width: 400px;
+      -webkit-animation: rotation 48s infinite linear;
+    }
+  }
+
+  &--3 {
+    height: 140px;
+    width: 140px;
+    bottom: -195px;
+    right: 0;
+    bottom: 0;
+
+    img {
+      height: 200px;
+      width: 200px;
+      -webkit-animation: rotation 40s infinite linear;
+    }
+  }
+
+  @media (min-width: 576px) {
+    &--1 {
+      height: 165px;
+      width: 165px;
+
+      top: 0;
+      left: 0;
+      bottom: 0;
+
+      img {
+        right: 0;
+        bottom: 0;
+        height: 300px;
+        width: 300px;
+        -webkit-animation: rotation 32s infinite linear;
+        animation-direction: reverse;
+      }
+    }
+
+    &--2 {
+      height: 595px;
+      width: 257px;
+      bottom: -195px;
+      right: 0;
+      bottom: 0;
+
+      img {
+        height: 595px;
+        width: 595px;
+        -webkit-animation: rotation 48s infinite linear;
+      }
+    }
+
+    &--3 {
+      height: 270px;
+      width: 270px;
+      // bottom: -195px;
+
+      img {
+        height: 504px;
+        width: 504px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 992px) {}
+
+  @media (min-width: 1200px) {
+
+    &--1 {
+      height: 278px;
+      width: 230px;
+
+      img {
+        height: 446px;
+        width: 446px;
+      }
+    }
+
+    &--2 {
+      height: 595px;
+      width: 257px;
+
+      top: 369px;
+
+
+      img {
+        height: 595px;
+        width: 595px;
+      }
+    }
+
+    &--3 {
+      height: 304px;
+      width: 304px;
+      right: 0;
+
+      bottom: 0;
+
+      img {
+        height: 504px;
+        width: 504px;
+
+      }
+    }
+  }
+
+  @media (min-width: 1439px) {
+
+    &--2 {
+      top: 519px;
+    }
+
+    &--3 {
+      width: calc(((100% - 1440px) * -1) + 504px);
+      right: calc((100% - 1440px) * -1);
+    }
+  }
+}

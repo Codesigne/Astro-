@@ -1,0 +1,43 @@
+.step {
+  height: 155px;
+
+  &__counter {
+    font-size: 82px;
+  }
+
+  &__arrow {
+    top: 4em;
+    left: 1em;
+
+    &--2 {
+      left: 2em;
+    }
+  }
+
+  @media (min-width: 576px) {
+    margin-bottom: 30px;
+
+    &__arrow {
+      left: 0px;
+    }
+
+    &__bg {
+      left: -15%;
+      top: -1em;
+    }
+
+    &__text {
+      font-size: 24px;
+    }
+  }
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 992px) {}
+
+  @media (min-width: 1200px) {}
+
+  @media (min-width: 1440px) {
+    margin-bottom: 65px;
+  }
+}

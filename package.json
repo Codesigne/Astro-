@@ -1,0 +1,23 @@
+{
+    "name": "2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "doc": "doc"
+    },
+    "scripts": {
+        "sass": "sass --watch  src/sass/app.scss:css/app.css  --source-map --embed-source-map --style compressed",
+        "server": "webpack-dev-server --mode development"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "webpack-cli": "^3.3.1",
+        "webpack-dev-server": "^3.3.1"
+    },
+    "dependencies": {
+        "webpack": "^4.30.0"
+    }
+}
